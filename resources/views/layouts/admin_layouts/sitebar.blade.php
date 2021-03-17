@@ -36,7 +36,7 @@
                 </li>
                 <li> <a href="{{url('admin/categories')}}"><i class="bx bx-right-arrow-alt"></i>Medicine Category</a>
                 </li>
-                <li> <a href="app-file-manager.html"><i class="bx bx-right-arrow-alt"></i>File Manager</a>
+                <li> <a href="{{url('admin/generics')}}"><i class="bx bx-right-arrow-alt"></i>Medicine Generic</a>
                 </li>
                 <li> <a href="app-contact-list.html"><i class="bx bx-right-arrow-alt"></i>Contatcs</a>
                 </li>

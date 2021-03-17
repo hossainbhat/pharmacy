@@ -40,10 +40,14 @@ Route::prefix('/admin')->group(function(){
         Route::get('/companies', [App\Http\Controllers\ProductCompayController::class, 'ProductCompany']);
         Route::match(['get','post'],'/add-edit-company/{id?}', [App\Http\Controllers\ProductCompayController::class, 'addEditProductCompany']);
         Route::get('delete-company/{id}', [App\Http\Controllers\ProductCompayController::class, 'deleteProductCompany']);
-        //product company
+        //product category
         Route::get('/categories', [App\Http\Controllers\ProductCategoryController::class, 'ProductCategory']);
         Route::match(['get','post'],'/add-edit-category/{id?}', [App\Http\Controllers\ProductCategoryController::class, 'addEditProductCategory']);
         Route::get('delete-category/{id}', [App\Http\Controllers\ProductCategoryController::class, 'deleteProductCategory']);
+         //product generic
+         Route::get('/generics', [App\Http\Controllers\ProductGenericController::class, 'ProductGeneric']);
+         Route::match(['get','post'],'/add-edit-generic/{id?}', [App\Http\Controllers\ProductGenericController::class, 'addEditProductGeneric']);
+         Route::get('delete-generic/{id}', [App\Http\Controllers\ProductGenericController::class, 'deleteProductGeneric']);
     });
 });
 Auth::routes(['register' => false]);
