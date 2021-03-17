@@ -28,6 +28,19 @@ Route::prefix('/admin')->group(function(){
         Route::post('/check-pwd', [App\Http\Controllers\UserController::class, 'chkPassword']);
         Route::post('/update-pwd', [App\Http\Controllers\UserController::class, 'updatePassword']);
         Route::get('/logout', [App\Http\Controllers\UserController::class, 'logout']);
+
+
+        //import products
+        Route::get('/import-products', [App\Http\Controllers\ImportProductController::class, 'importProduct']);
+        Route::match(['get','post'],'/add-edit-importProduct/{id?}', [App\Http\Controllers\ImportProductController::class, 'addEditImportProduct']);
+        Route::get('delete-importProduct/{id}', [App\Http\Controllers\ImportProductController::class, 'deleteImportProduct']);
+        Route::post('import-product', [App\Http\Controllers\ImportProductController::class, 'importExcellProduct']);
+
+        //product company
+        Route::get('/companies', [App\Http\Controllers\ProductCompayController::class, 'ProductCompany']);
+        Route::match(['get','post'],'/add-edit-company/{id?}', [App\Http\Controllers\ProductCompayController::class, 'addEditProductCompany']);
+        Route::get('delete-company/{id}', [App\Http\Controllers\ProductCompayController::class, 'deleteProductCompany']);
+
     });
 });
 Auth::routes(['register' => false]);

@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class ImportProduct extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['company','category','generic','strength','product'];
 }

@@ -9,6 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
 <link href="{{asset('css/admin_css/app.css')}}" rel="stylesheet">
 <link href="{{asset('css/admin_css/icons.css')}}" rel="stylesheet">
+<link href="{{asset('plugins/metismenu/css/metisMenu.min.css')}}" rel="stylesheet" />
+<link href="{{asset('plugins/datatable/css/dataTables.bootstrap5.min.css')}}" rel="stylesheet" />
 <!-- Theme Style CSS -->
 <link rel="stylesheet" href="{{asset('css/admin_css/dark-theme.css')}}" />
 <link rel="stylesheet" href="{{asset('css/admin_css/semi-dark.css')}}" />
