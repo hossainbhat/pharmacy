@@ -52,6 +52,10 @@ Route::prefix('/admin')->group(function(){
         Route::get('/strengths', [App\Http\Controllers\ProductStrengthController::class, 'ProductStrength']);
         Route::match(['get','post'],'/add-edit-strength/{id?}', [App\Http\Controllers\ProductStrengthController::class, 'addEditProductStrength']);
         Route::get('delete-strength/{id}', [App\Http\Controllers\ProductStrengthController::class, 'deleteProductStrength']);
+        //product supplier
+        Route::get('/suppliers', [App\Http\Controllers\SupplierController::class, 'Supplier']);
+        Route::match(['get','post'],'/add-edit-supplier/{id?}', [App\Http\Controllers\SupplierController::class, 'addEditSupplier']);
+        Route::get('delete-supplier/{id}', [App\Http\Controllers\SupplierController::class, 'deleteSupplier']);
 
      });
 });

@@ -26,7 +26,7 @@
             </a>
         </li>
         <li>
-            <a href="{{url('admin/import-products')}}">
+            <a href="{{url('admin/suppliers')}}">
                 <div class="parent-icon"><i class='bx bx-cookie'></i>
                 </div>
                 <div class="menu-title">Supplier</div>
