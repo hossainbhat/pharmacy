@@ -26,6 +26,13 @@
             </a>
         </li>
         <li>
+            <a href="{{url('admin/import-products')}}">
+                <div class="parent-icon"><i class='bx bx-cookie'></i>
+                </div>
+                <div class="menu-title">Supplier</div>
+            </a>
+        </li>
+        <li>
             <a href="javascript:;" class="has-arrow">
                 <div class="parent-icon"><i class="bx bx-category"></i>
                 </div>
@@ -38,7 +45,7 @@
                 </li>
                 <li> <a href="{{url('admin/generics')}}"><i class="bx bx-right-arrow-alt"></i>Medicine Generic</a>
                 </li>
-                <li> <a href="app-contact-list.html"><i class="bx bx-right-arrow-alt"></i>Contatcs</a>
+                <li> <a href="{{url('admin/strengths')}}"><i class="bx bx-right-arrow-alt"></i>Medicine Strength</a>
                 </li>
                 <li> <a href="app-to-do.html"><i class="bx bx-right-arrow-alt"></i>Todo List</a>
                 </li>

@@ -48,7 +48,12 @@ Route::prefix('/admin')->group(function(){
          Route::get('/generics', [App\Http\Controllers\ProductGenericController::class, 'ProductGeneric']);
          Route::match(['get','post'],'/add-edit-generic/{id?}', [App\Http\Controllers\ProductGenericController::class, 'addEditProductGeneric']);
          Route::get('delete-generic/{id}', [App\Http\Controllers\ProductGenericController::class, 'deleteProductGeneric']);
-    });
+        //product strength
+        Route::get('/strengths', [App\Http\Controllers\ProductStrengthController::class, 'ProductStrength']);
+        Route::match(['get','post'],'/add-edit-strength/{id?}', [App\Http\Controllers\ProductStrengthController::class, 'addEditProductStrength']);
+        Route::get('delete-strength/{id}', [App\Http\Controllers\ProductStrengthController::class, 'deleteProductStrength']);
+
+     });
 });
 Auth::routes(['register' => false]);
 
