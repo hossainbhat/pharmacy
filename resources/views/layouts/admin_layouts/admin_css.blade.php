@@ -11,6 +11,8 @@
 <link href="{{asset('css/admin_css/icons.css')}}" rel="stylesheet">
 <link href="{{asset('plugins/metismenu/css/metisMenu.min.css')}}" rel="stylesheet" />
 <link href="{{asset('plugins/datatable/css/dataTables.bootstrap5.min.css')}}" rel="stylesheet" />
+<link href="{{asset('plugins/select2/css/select2.min.css')}}" rel="stylesheet" />
+<link href="{{asset('plugins/select2/css/select2-bootstrap4.css')}}" rel="stylesheet" />
 <!-- Theme Style CSS -->
 <link rel="stylesheet" href="{{asset('css/admin_css/dark-theme.css')}}" />
 <link rel="stylesheet" href="{{asset('css/admin_css/semi-dark.css')}}" />

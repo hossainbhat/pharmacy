@@ -40,7 +40,10 @@ Route::prefix('/admin')->group(function(){
         Route::get('/companies', [App\Http\Controllers\ProductCompayController::class, 'ProductCompany']);
         Route::match(['get','post'],'/add-edit-company/{id?}', [App\Http\Controllers\ProductCompayController::class, 'addEditProductCompany']);
         Route::get('delete-company/{id}', [App\Http\Controllers\ProductCompayController::class, 'deleteProductCompany']);
-
+        //product company
+        Route::get('/categories', [App\Http\Controllers\ProductCategoryController::class, 'ProductCategory']);
+        Route::match(['get','post'],'/add-edit-category/{id?}', [App\Http\Controllers\ProductCategoryController::class, 'addEditProductCategory']);
+        Route::get('delete-category/{id}', [App\Http\Controllers\ProductCategoryController::class, 'deleteProductCategory']);
     });
 });
 Auth::routes(['register' => false]);

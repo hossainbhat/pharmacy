@@ -34,7 +34,7 @@
             <ul>
                 <li> <a href="{{url('admin/companies')}}"><i class="bx bx-right-arrow-alt"></i>Medicine Company</a>
                 </li>
-                <li> <a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>Chat Box</a>
+                <li> <a href="{{url('admin/categories')}}"><i class="bx bx-right-arrow-alt"></i>Medicine Category</a>
                 </li>
                 <li> <a href="app-file-manager.html"><i class="bx bx-right-arrow-alt"></i>File Manager</a>
                 </li>

@@ -11,6 +11,7 @@
     <script src="{{asset('js/admin_js/index.js')}}"></script>
 	<script src="{{asset('plugins/datatable/js/jquery.dataTables.min.js')}}"></script>
 	<script src="{{asset('plugins/datatable/js/dataTables.bootstrap5.min.js')}}"></script>
+	<script src="{{asset('plugins/select2/js/select2.min.js')}}"></script>
 	<!--app JS-->
 	<script src="{{asset('js/admin_js/app.js')}}"></script>
 	<script>
